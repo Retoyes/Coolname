@@ -9,7 +9,7 @@ body {
 
 #music-btn {
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
   padding: 10px 15px;
   background: #4778c3;
