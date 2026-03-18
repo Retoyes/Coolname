@@ -7,6 +7,22 @@ body {
   background-attachment: fixed;
 }
 
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #4778c3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#music-btn:hover {
+  background: #355a91;
+}
+
 #wrapper {
   background: #fff;
   margin: auto;
