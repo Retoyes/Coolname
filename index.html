@@ -6,13 +6,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
     
-<audio controls autoplay loop id="bg-music">
+<audio id="bg-music" loop>
     <source src="Yellow Magic Orchestra-Tong Poo.mp3" type="audio/mpeg">
 </audio>
 
+<button id="music-btn">🔊 Включить музыку</button>
+
 <script>
-    const music = document.getElementById("bg-music");
-    music.volume = 0.2; // от 0 до 1 (0.2 = тихо)
+const music = document.getElementById("bg-music");
+const btn = document.getElementById("music-btn");
+
+music.volume = 0.15;
+
+let isPlaying = false;
+
+btn.addEventListener("click", () => {
+    if (!isPlaying) {
+        music.play();
+        btn.textContent = "🔇 Выключить музыку";
+        isPlaying = true;
+    } else {
+        music.pause();
+        btn.textContent = "🔊 Включить музыку";
+        isPlaying = false;
+    }
+});
 </script>
     
 <body>
